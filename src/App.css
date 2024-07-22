@@ -1,15 +1,18 @@
 .App {
   text-align: center;
+  display: grid;
 }
 
 .App-logo {
-  height: 30vmin;
+  height: 11vmin;
   pointer-events: none;
+  border: 1px solid;
 }
 
 .App-name {
-  height: 30vmin;
+  height: 11vmin;
   pointer-events: none;
+  padding-left: 200px;
 }
 
 .App-header {
@@ -23,8 +26,18 @@
   color: rgb(236, 13, 13);
 }
 
+.all{
+  display: grid;
+  right:0;
+  bottom: 0;
+  width: auto;
+  height: 9%;
+  margin-left: 300px;
+}
+
 .App-link {
   color: #61dafb;
 }
+
 
 

@@ -1,0 +1,86 @@
+.ASRButtons{
+    display: flex;
+    width:100px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    margin: 0;
+};
+
+.addition{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid;
+    border-color: darkgreen;
+    background-color: lightgreen;
+    margin: 0;
+    padding: 0;
+    border-bottom: 3px solid green;
+    border-left: 5px solid green;
+    color: green;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid;
+    border-color: red;
+    background-color: lightcoral;
+    margin: 0;
+    padding: 0;
+    border-bottom: 3px solid red;
+    border-left: 5px solid red;
+    color: red;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.count{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 40px;
+    height: 37px;
+    border: 1px solid;
+    border-bottom: 2px solid;
+    margin: 0;
+    padding: 0;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    border: 2px solid;
+    border-color: orange;
+    background-color: lightgoldenrodyellow;
+    border-bottom: 4px solid orange;
+    border-left: 7px solid orange;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.yrordr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    border: 2px solid;
+    border-color: green;
+    background-color: lightgoldenrodyellow;
+}

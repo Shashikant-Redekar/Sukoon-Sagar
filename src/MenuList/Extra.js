@@ -1,7 +1,9 @@
+import '../Styling/style.scss';
+
 export const Extra = () => (
     <div>
-        <h3>
+        <h2 className="extra">
             Extra Cheese-> Rs.40/- Butter-> Rs.30/-
-        </h3>
+        </h2>
     </div>
 )

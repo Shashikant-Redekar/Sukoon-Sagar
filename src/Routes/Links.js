@@ -1,16 +1,10 @@
 import {NavLink} from 'react-router-dom';
-import Hamburger from 'hamburger-react';
-import { useState } from 'react';
-import '../Styling/Components/navbar.scss';
+import '../Styling/style.scss';
 
-export const Links = () => {
-const [isShowNavbar, setShowNavbar] = useState(false);
+export const Links = (props) => {
+let isShowNavbar = props.burger;
 return(
     <div>
-        <div className='hamburger'>
-            <Hamburger toggled={isShowNavbar} toggle={setShowNavbar}/>
-            <h3>Menu</h3>
-        </div>
         {isShowNavbar&&<div>
             <nav className = "nav">
                 <ul className = "list">
@@ -29,11 +23,15 @@ return(
                     <li className = 'listin'><NavLink className = 'a' to='/Chinese-Soups'>Chinese Soups</NavLink></li>
                     <li className = 'listin'><NavLink className = 'a' to='/Starter-Tandoori-&-Kabab'>Starter Tandoori & Kabab</NavLink></li>
                     <li className = 'listin'><NavLink className = 'a' to='/Chinese-Starter'>Chinese Starter's</NavLink></li>
-                    <li className = 'listin'><NavLink className = 'a' to='Veg-Khajana'>Veg Khajana</NavLink></li>
+                    <li className = 'listin'><NavLink className = 'a' to='/Veg-Khajana'>Veg Khajana</NavLink></li>
                 </ul>
+                <NavLink  className = 'listor' to = '/My-Order' >
+                    <button className="yrordr">
+                        Your Orders
+                    </button>
+            </NavLink>
             </nav>
         </div>}
     </div>
-
 );
 };
