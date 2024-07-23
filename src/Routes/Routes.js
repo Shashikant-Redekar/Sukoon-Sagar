@@ -44,13 +44,13 @@ export function AppRoute(props) {
             <Route path='/Thali'  element={<Thali orderList={orderList} setOrderList={setOrderList}/>}/>
             <Route path='/Sandwiches' element={<Sandwiches orderList={orderList} setOrderList={setOrderList}/>} />
             <Route path='/Pavbhaji' element={<Pavbhaji orderList={orderList} setOrderList={setOrderList}/>} />
-            <Route path='/Pizza' element={<Pizza orderList={props.orderList} setOrderList={setOrderList}/>} />
-            <Route path='/Kids-Special' element={<Kids orderList={props.orderList} setOrderList={setOrderList}/>} />
-            <Route path='/Indian-Soups' element={<IndianSoups orderList={props.orderList} setOrderList={setOrderList}/>} />
-            <Route path='/Chinese-Soups' element={<ChineseSoups orderList={props.orderList} setOrderList={setOrderList}/>} />
-            <Route path='/Starter-Tandoori-&-Kabab' element={<StarterTandoori orderList={props.orderList} setOrderList={setOrderList}/> } />
-            <Route path='/Chinese-Starter' element={<ChineseStarter orderList={props.orderList} setOrderList={setOrderList}/>} />
-            <Route path='/Veg-Khajana' element={<VegKhajana orderList={props.orderList} setOrderList={setOrderList}/>} />
+            <Route path='/Pizza' element={<Pizza orderList={orderList} setOrderList={setOrderList}/>} />
+            <Route path='/Kids-Special' element={<Kids orderList={orderList} setOrderList={setOrderList}/>} />
+            <Route path='/Indian-Soups' element={<IndianSoups orderList={orderList} setOrderList={setOrderList}/>} />
+            <Route path='/Chinese-Soups' element={<ChineseSoups orderList={orderList} setOrderList={setOrderList}/>} />
+            <Route path='/Starter-Tandoori-&-Kabab' element={<StarterTandoori orderList={orderList} setOrderList={setOrderList}/> } />
+            <Route path='/Chinese-Starter' element={<ChineseStarter orderList={orderList} setOrderList={setOrderList}/>} />
+            <Route path='/Veg-Khajana' element={<VegKhajana orderList={orderList} setOrderList={setOrderList}/>} />
             <Route path='/My-Order' element={<Myorder orderList={orderList} setOrderList={setOrderList}/>}/>
         </Routes>
     </BrowserRouter>

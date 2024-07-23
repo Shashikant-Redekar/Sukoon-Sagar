@@ -4,18 +4,17 @@
 }
 
 .App-logo {
-  height: 11vmin;
+  height: 85px;
   pointer-events: none;
-  border: 1px solid;
 }
 
 .App-name {
-  height: 11vmin;
+  height: 85px;
   pointer-events: none;
   padding-left: 200px;
 }
 
-.App-header {
+/* .App-header {
   background-color: #ffffff;
   min-height: 100vh;
   display: flex;
@@ -24,15 +23,13 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: rgb(236, 13, 13);
-}
+} */
 
 .all{
-  display: grid;
-  right:0;
-  bottom: 0;
-  width: auto;
-  height: 9%;
-  margin-left: 300px;
+  left: 300px;
+  width: calc(100% - 300px);
+  height: calc(100% - 85px);
+  position:absolute;
 }
 
 .App-link {

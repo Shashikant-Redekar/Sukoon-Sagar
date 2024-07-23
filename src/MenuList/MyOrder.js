@@ -1,5 +1,3 @@
-import { NameLogo } from '../name-logo';
-
 
 function Listing(props){
 
@@ -54,7 +52,6 @@ function Listing(props){
 
 export const Myorder = (props) => (
     <div className='menu'>
-        <NameLogo />
         <div>
             <p>Enter your table number:</p>
             <div>

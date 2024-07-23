@@ -2,7 +2,7 @@
     background-color: #357f3a;
     color: #fff;
     width: 300px;
-    height: 94.6%;
+    height: calc(100% - 85px);
     //padding-top:11vmin;
     left: 0;
     bottom: 0;
@@ -13,7 +13,7 @@
   top:0;
   left:0;
   right: 0;
-  height: 11vmin;
+  height: 85px;
   display: flex;
   position: fixed;
   background-color: white;
@@ -46,9 +46,15 @@
     text-decoration: underline;
 }
 
+.logoname{
+  width: calc(100% - 300px);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .namelogo{
   display: flex;
-  justify-content:space-between;
+  justify-content:flex-start;
 }
 
 .hamburger{
@@ -68,13 +74,10 @@
 }
 
 .menu{
-  display: grid;
+  position:absolute;
   width: 100%;
-  bottom: 0;
-  right: 0;
-  background-color: white;
-  padding-top: 11vmin;
-  border: 3px solid orange;
+  top:85px;
+  height:calc(100% - 85px);
 }
 
 @media (max-width: 768px) {

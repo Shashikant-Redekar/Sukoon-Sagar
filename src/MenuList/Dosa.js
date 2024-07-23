@@ -1,6 +1,5 @@
 import { Extra } from "./Extra";
 import { useState, useEffect } from 'react';
-import { NameLogo } from '../name-logo';
 
 function Menu(props) {
     const MenuPrice = [
@@ -213,7 +212,6 @@ function Menu(props) {
 
 export const Dosa = (props) => (
     <div className="menu"> 
-        <NameLogo />
         <Extra />
        <div>
            <Menu orderList={props.orderList} setOrderList={props.setOrderList}/> 

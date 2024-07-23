@@ -3,8 +3,7 @@ import { AppRoute } from './Routes/Routes';
 import './Styling/style.scss';
 import { useState } from 'react';
 import Hamburger from 'hamburger-react';
-import logo from './sukoonsagarlogo-1.png';
-import name from './SukunSagarLogo2.png';
+import { NameLogo } from './name-logo';
 
 
 // function Navbar () {
@@ -24,9 +23,8 @@ function App() {
             <Hamburger toggled={burger} toggle={setBurger}/>
             <h3>Menu</h3>
         </div>
-        <div className='namelogo'>
-        <img src={logo} className="App-logo" alt="logo" />
-        <img src={name} className="App-name" alt="logo" />
+        <div className='logoname'>
+          <NameLogo />
         </div>
       </div>
     <div className="App">

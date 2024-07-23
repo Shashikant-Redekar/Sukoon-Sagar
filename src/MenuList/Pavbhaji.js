@@ -1,5 +1,4 @@
 import { Extra } from "./Extra";
-import { NameLogo } from '../name-logo';
 import { useState, useEffect } from 'react';
 import '../Styling/style.scss';
 
@@ -150,11 +149,19 @@ function Menu(props) {
     const newOrder = newMenu.filter(c => {
         return c.count > 0
     });
+
+    const toRemove = newMenu.filter(c => {
+        return c.count === 0
+    });
+
     if(props.orderList !== undefined){
         const mergerArray = newOrder.concat(props.orderList.filter(
             itm => !newOrder.some(itm2 => itm.MenuItem === itm2.MenuItem)));
-        props.setOrderList(mergerArray);
-        }
+        const toKeep = mergerArray.filter(or =>
+            toRemove.every(tr => (tr.MenuItem !== or.MenuItem ))
+        );   
+        props.setOrderList(toKeep);
+        };
     };
 
     useEffect(() => {
@@ -182,7 +189,6 @@ function Menu(props) {
 
 export const Pavbhaji = (props) => (
     <div className="menu"> 
-        <NameLogo />
         <Extra />
        <div>
            <Menu orderList={props.orderList} setOrderList={props.setOrderList}/> 
