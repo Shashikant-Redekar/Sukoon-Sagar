@@ -24,6 +24,15 @@ return(
                     <li className = 'listin'><NavLink className = 'a' to='/Starter-Tandoori-&-Kabab'>Starter Tandoori & Kabab</NavLink></li>
                     <li className = 'listin'><NavLink className = 'a' to='/Chinese-Starter'>Chinese Starter's</NavLink></li>
                     <li className = 'listin'><NavLink className = 'a' to='/Veg-Khajana'>Veg Khajana</NavLink></li>
+                    <li className = 'listin'><NavLink className = 'a' to='/Cheese-ki-Bahar'>Cheese Ki Bahar</NavLink></li>
+                    <li className = 'listin'><NavLink className = 'a' to='/Dal-ki-Mehak'>Dal Ki Mehak</NavLink></li>
+                    <li className = 'listin'><NavLink className = 'a' to='/Smoothies'>Smoothies</NavLink></li>
+                    <li className = 'listin'><NavLink className = 'a' to='/Falooda'>Falooda</NavLink></li>
+                    <li className = 'listin'><NavLink className = 'a' to='/Fruit-Salad-Sweet'>Fruit Salad Sweet</NavLink></li>
+                    <li className = 'listin'><NavLink className = 'a' to='/Lassi'>Lassi</NavLink></li>
+                    <li className = 'listin'><NavLink className = 'a' to='/Hot-Beverages'>Hot Beverages</NavLink></li>
+                    <li className = 'listin'><NavLink className = 'a' to='/Cold-Beverages'>Cold Beverages</NavLink></li>
+                    <li className = 'listin'><NavLink className = 'a' to='/Dessert'>Dessert</NavLink></li>
                 </ul>
                 <NavLink  className = 'listor' to = '/My-Order' >
                     <button className="yrordr">

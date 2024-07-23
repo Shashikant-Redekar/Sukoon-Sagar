@@ -17,8 +17,16 @@ import { ChineseSoups } from '../MenuList/Chinese-Soups';
 import { StarterTandoori } from '../MenuList/Starter-Tandoori';
 import { ChineseStarter } from '../MenuList/Chinese-Starter';
 import { VegKhajana } from '../MenuList/Veg-Khajana';
+import { Dessert } from '../MenuList/Dessert';
+import { Cold } from '../MenuList/Cold-Beverages';
+import { Hot } from '../MenuList/Hot-Beverages';
+import { Lassi } from '../MenuList/Lassi';
+import { Fruit } from '../MenuList/Fruit-Salad';
 import { Myorder } from '../MenuList/MyOrder';
-
+import { Falooda } from '../MenuList/Falooda';
+import { Smoothies } from '../MenuList/Smoothies';
+import { Dal } from '../MenuList/Dal';
+import { Cheese } from '../MenuList/Cheese-ki-bahar';
 
 export function AppRoute(props) {
     useEffect(() => {
@@ -52,6 +60,15 @@ export function AppRoute(props) {
             <Route path='/Chinese-Starter' element={<ChineseStarter orderList={orderList} setOrderList={setOrderList}/>} />
             <Route path='/Veg-Khajana' element={<VegKhajana orderList={orderList} setOrderList={setOrderList}/>} />
             <Route path='/My-Order' element={<Myorder orderList={orderList} setOrderList={setOrderList}/>}/>
+            <Route path='/Dessert' element={<Dessert orderList={orderList} setOrderList={setOrderList}/>} />
+            <Route path='/Cold-Beverages' element={<Cold orderList={orderList} setOrderList={setOrderList}/>} />
+            <Route path='/Hot-Beverages' element={<Hot orderList={orderList} setOrderList={setOrderList}/>} />
+            <Route path='/Lassi' element={<Lassi orderList={orderList} setOrderList={setOrderList}/>} />
+            <Route path='/Fruit-Salad-Sweet' element={<Fruit orderList={orderList} setOrderList={setOrderList}/>} />
+            <Route path='/Falooda' element={<Falooda orderList={orderList} setOrderList={setOrderList}/>} />
+            <Route path='/Smoothies' element={<Smoothies orderList={orderList} setOrderList={setOrderList}/>} />
+            <Route path='/Dal-ki-Mehak' element={<Dal orderList={orderList} setOrderList={setOrderList}/>} />
+            <Route path='/Cheese-ki-Bahar' element={<Cheese orderList={orderList} setOrderList={setOrderList}/>} />
         </Routes>
     </BrowserRouter>
     );
